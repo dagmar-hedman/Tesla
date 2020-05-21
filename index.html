@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Tesla </title>
         <meta charset="UTF-8">
+        <title> Tesla </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
     <nav>
     <a href="#Story">Tesla's Story</a>
-    <a href="#Tesla">Pictures of Tesla</a>
     <a href="#Hobbies">Hobbies</a>
-    <a href="#Toys">Favorite Toys</a>
+    <a href="#Tesla">Pictures of Tesla</a>
+    <a href="#Toys">Favorite Toys</a> 
     <a href="#Rescue">Hundar Utan Hem</a>
     </nav>    
         <!--big banner at top of page-->
         <section>
-            <h1>Tesla: The German Shepherd Mix</h1>
+        <div class="hero-image">
+            <h1 class="hero-text">Tesla <br>The German Shepherd</h1>
+        </div>
         </section>
         <!--section contains background about Tesla-->
         <section>
             <h3 id="Story">Tesla's Story</h3>
-            <img src="images/tesla/tesla.JPG" alt="face of a german shepherd dog" width="300">
+            <img class="left" src="images/tesla/tesla.JPG" alt="face of a german shepherd dog" width="300">
             <p>Tesla is a German Shepherd Mix that was born in Ireland in 2015. 
                 Tesla did not have a home in Ireland so an organization called <a href="https://hundarutanhem.se/">Hundar Utan Hem</a> brought her to Sweden. 
                 In Sweden, she was adopted by her new family. Tesla graduated from Puppy Training School in 2016.
                 Tesla now works as a family pet and is very happy to have a loving home.</p>
+        </section>
+         <!--section with activities tesla enjoys styled in bullets-->
+         <section>
+            <h4 id="Hobbies">Tesla's Hobbies</h4>
+            <ul style="list-style:none;">
+                <li>🐾  going for walks in the forest</li>
+                <li>🐾  playing with toys</li>
+                <li>🐾  sleeping</li>
+                <li>🐾  begging for food</li>
+                <li>🐾  barking at the mailperson</li>
+            </ul>
         </section>
         <!--section with more pictures of Tesla-->
         <section>
             <h3 id="Tesla">Pictures of Tesla</h3>
             <div>
                 <img src="images/tesla/TeslaPup1.png" alt="german shepherd puppy being carried" width="300">
-                <p>Tesla in shelter in Ireland</p>
+                <p>Tesla in a shelter in Ireland</p>
             </div>
             <div>
                 <img src="images/tesla/TeslaPup2.JPG" alt="german shepherd puppy being carried, close up on face" width="300">
@@ -53,50 +67,37 @@
                 <p>Tesla by the water in Nacka</p>
             </div>
         </section>
-        <!--section with activities tesla enjoys styled in bullets-->
-        <section>
-            <h4 id="Hobbies">Tesla's Hobbies</h4>
-            <ul style="list-style: none;">
-                <li>🐾  going for walks in the forest</li>
-                <li>🐾  playing with toys</li>
-                <li>🐾  sleeping</li>
-                <li>🐾  begging for food</li>
-                <li>🐾  barking at the mailperson</li>
-            </ul>
-        </section>
         <!--section with Teslas favorite toys with pictures-->
         <section>
-            <h4 id="Toys">Tesla's Favorite Toys</h4>
-                <div>
-                <img src="images/toys/sheep.JPG" style="transform:rotate(270deg)" alt="small brown sheep plush dog toy" width="150">
-                <p>Mr. Sheep</p>
+        <h4 id="Toys">Tesla's Favorite Toys</h4>
+        <div class="row">     
+                <div class="column">
+                <img src="images/toys/sheep.JPG" style="transform:rotate(270deg)" alt="small brown sheep plush dog toy" width="100">
+                <p>Sheepers Creepers</p>
                 </div>
-            <div>
-            <img src="images/toys/tennis.JPG" style="transform:rotate(270deg)" alt="tennis ball" width="150">
+            <div class="column">
+            <img src="images/toys/tennis.JPG" style="transform:rotate(270deg)" alt="tennis ball" width="100">
             <p>Tennis Ball</p>
             </div>
-                <div>
-                <img src="images/toys/booboo.JPG" style="transform:rotate(270deg)" alt="green alien plush dog toy" width="150">
+                <div class="column">
+                <img src="images/toys/booboo.JPG" style="transform:rotate(270deg)" alt="green alien plush dog toy" width="100">
                 <p>Boo-Boo</p>
                 </div>
-            <div>
-            <img src="images/toys/shuttle.JPG" style="transform:rotate(270deg)" alt="blue and orange plastic football dog toy" width="150">
-            <p>The Squeaker</p>
+            <div class="column">
+            <img src="images/toys/peppa.JPG" style="transform:rotate(270deg)" alt="hot pink squeaky rubber pig dog toy" width="100">
+            <p>Peppa</p>
             </div>
-                <div>
-                <img src="images/toys/peppa.JPG" style="transform:rotate(270deg)" alt="hot pink squeaky rubber pig dog toy" width="150">
-                <p>Peppa</p>
-                </div>
+        </div>
         </section>
         <!--section with a video dog dancing competition-->
         <section>
             <h4 id="Rescue">Hundar Utan Hem on YouTube</h4>
         </section>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LYkHgSYw-HM?start=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LYkHgSYw-HM?start=9" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
         <!--put link to Hundar Utan Hem-->
         <footer>
-            <p>This site is not sponsored or endorsed by Hundar Utan Hem</p>
-            <p><a href="https://hundarutanhem.se/"><img src="images/formats/logoHUH.jpg" alt="organization logo for humar utan hem" width="200"></a> Don't buy love, rescue it </p>
+            <p class="bright">This site is not sponsored or endorsed by Hundar Utan Hem</p>
+            <p class="bright"><a href="https://hundarutanhem.se/"><img src="images/formats/logoHUH.jpg" alt="organization logo for humar utan hem" width="100"></a> Don't buy love, rescue it </p>
             <a href="https://www.facebook.com/hundarutanhem/"><img src="images/formats/facebook.svg" alt="facebook logo" width="30"></a>
             <a href="https://www.instagram.com/hundarutanhem/"><img src="images/formats/instagram.svg" alt="instagram logo" width="30"></a>
             <a href="https://www.youtube.com/channel/UCTzO4uUV3Vuzy1NP8M4BELA"><img src="images/formats/youtube.svg" alt="youtube logo" width="30"></a>
