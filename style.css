@@ -1,5 +1,23 @@
-p, h3, h4, li {
+@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Candal&family=Cardo&display=swap');
+
+p, li {
     color:rgb(30, 30, 30);
+    font-family: "Cardo", Verdana, sans-serif;
+}
+
+h3, h4 {
+    color: rgb(30, 30, 30);
+    font-family: "Caladea", Verdana, sans-serif;
+}
+.center {
+    text-align: center;
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }
 footer {
     background-color: rgb(0, 80, 120);
@@ -17,8 +35,8 @@ body {background-image: url(images/formats/lighback.png);
     background-size: cover;
 }
 .hero-text {
-    font-weight: 800;
-    font-family: "Chalkduster", fantasy, sans-serif;
+    font-size: 50px;
+    font-family: "Canda", Verdana, sans-serif;
     color: white;
     text-align: left;
     margin-left: 1.5cm;
@@ -36,6 +54,8 @@ body {background-image: url(images/formats/lighback.png);
 .large {
     font-size: 60px;
 }
+
+
 /* I want text to appear beisde Tesla's picture without the later elements also doing so
 .left {
     float: left;
